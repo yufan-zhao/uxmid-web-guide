@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>routes | Wayto前端开发指南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.01faf5b1.js" as="script"><link rel="preload" href="/assets/js/2.1f6bed03.js" as="script"><link rel="preload" href="/assets/js/17.6caf1d28.js" as="script"><link rel="prefetch" href="/assets/js/10.0de6283a.js"><link rel="prefetch" href="/assets/js/11.1fe21a5b.js"><link rel="prefetch" href="/assets/js/12.390bcb89.js"><link rel="prefetch" href="/assets/js/13.47fa6997.js"><link rel="prefetch" href="/assets/js/14.c58bc93e.js"><link rel="prefetch" href="/assets/js/15.3e4f0e8c.js"><link rel="prefetch" href="/assets/js/16.ab8cb8b8.js"><link rel="prefetch" href="/assets/js/18.5bcb3b20.js"><link rel="prefetch" href="/assets/js/19.056b321e.js"><link rel="prefetch" href="/assets/js/20.533cb77c.js"><link rel="prefetch" href="/assets/js/21.79fd72d3.js"><link rel="prefetch" href="/assets/js/22.753c0a4c.js"><link rel="prefetch" href="/assets/js/23.2ffd4c1e.js"><link rel="prefetch" href="/assets/js/24.4e331b90.js"><link rel="prefetch" href="/assets/js/25.f808f6ae.js"><link rel="prefetch" href="/assets/js/26.49af2814.js"><link rel="prefetch" href="/assets/js/3.a13bede0.js"><link rel="prefetch" href="/assets/js/4.ba3164ba.js"><link rel="prefetch" href="/assets/js/5.75a3592b.js"><link rel="prefetch" href="/assets/js/6.0377ba0c.js"><link rel="prefetch" href="/assets/js/7.8fe81f3b.js"><link rel="prefetch" href="/assets/js/8.ed503372.js"><link rel="prefetch" href="/assets/js/9.f0a02508.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wayto前端开发指南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/category/apis.html" class="nav-link">
+  目录
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/category/apis.html" class="nav-link">
+  目录
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>src</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/category/apis.html" class="sidebar-link">apis</a></li><li><a href="/category/application.html" class="sidebar-link">application</a></li><li><a href="/category/assets.html" class="sidebar-link">assets</a></li><li><a href="/category/broadcasts.html" class="sidebar-link">broadcasts</a></li><li><a href="/category/common.html" class="sidebar-link">common</a></li><li><a href="/category/components.html" class="sidebar-link">components</a></li><li><a href="/category/enums.html" class="sidebar-link">enums</a></li><li><a href="/category/models.html" class="sidebar-link">models</a></li><li><a href="/category/repository.html" class="sidebar-link">repository</a></li><li><a href="/category/routes.html" aria-current="page" class="active sidebar-link">routes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/category/routes.html#常规使用说明" class="sidebar-link">常规使用说明</a></li><li class="sidebar-sub-header"><a href="/category/routes.html#配合权限使用说明" class="sidebar-link">配合权限使用说明</a></li></ul></li><li><a href="/category/services.html" class="sidebar-link">services</a></li><li><a href="/category/styles.html" class="sidebar-link">styles</a></li><li><a href="/category/types.html" class="sidebar-link">types</a></li><li><a href="/category/views.html" class="sidebar-link">views</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="routes"><a href="#routes" class="header-anchor">#</a> routes</h1> <h2 id="常规使用说明"><a href="#常规使用说明" class="header-anchor">#</a> 常规使用说明</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;demo&quot;</span><span class="token punctuation">,</span>              <span class="token comment">// 路由名称</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/demo&quot;</span><span class="token punctuation">,</span>             <span class="token comment">// 路由地址（请使用绝对路径，以&quot;/&quot;开头）</span>
+    component<span class="token operator">:</span> dashboard<span class="token punctuation">,</span>      <span class="token comment">// 布局组件</span>
+    meta<span class="token operator">:</span>
+    <span class="token punctuation">{</span>
+        label<span class="token operator">:</span> <span class="token string">&quot;title&quot;</span><span class="token punctuation">,</span>        <span class="token comment">// 菜单标题</span>
+        icon<span class="token operator">:</span> <span class="token string">&quot;&quot;</span>               <span class="token comment">// 菜单图标（可选）</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    children<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>demo<span class="token punctuation">]</span>        <span class="token comment">// 二级菜单（包含二级菜单的路由都会被解析为一级菜单）</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>标准的vue-router配置，其中携带children路由的都会被解析为侧栏菜单，children内的路由会被解析为二级tab菜单。</p> <p>路由的顺序即是菜单的顺序。</p> <p>不需要特别配置默认路由地址，&quot;/&quot;路由会取出第一个菜单的路由地址。</p> <p>meta中携带的信息说明：</p> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>label</td> <td>string</td> <td>菜单的显示名称</td></tr> <tr><td>icon</td> <td>string</td> <td>菜单左侧icon（iconfont类）</td></tr> <tr><td>hideTab</td> <td>boolean</td> <td>该菜单不展示tab菜单</td></tr></tbody></table> <h2 id="配合权限使用说明"><a href="#配合权限使用说明" class="header-anchor">#</a> 配合权限使用说明</h2> <p>TODO</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/category/repository.html" class="prev">
+        repository
+      </a></span> <span class="next"><a href="/category/services.html">
+        services
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.01faf5b1.js" defer></script><script src="/assets/js/2.1f6bed03.js" defer></script><script src="/assets/js/17.6caf1d28.js" defer></script>
+  </body>
+</html>
