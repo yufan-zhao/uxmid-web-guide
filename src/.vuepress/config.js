@@ -1,7 +1,7 @@
 module.exports =
 {
     dest: "dist",
-    base: "/",
+    base: "/uxmid-web-guide/",
     title: "Wayto前端开发指南",
     description: "Just playing around",
     // theme: "@vuepress/vue",
