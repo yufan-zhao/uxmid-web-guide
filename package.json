@@ -1,0 +1,15 @@
+{
+  "name": "uxmid-web-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yufan-zhao/uxmid-web-guide.git",
+  "author": "yufan-zhao <yufan.zhao@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev src",
+    "docs:build": "vuepress build src"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
